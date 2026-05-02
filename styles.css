@@ -16,3 +16,119 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%);
 }
+
+/* || Main Styling */
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1.2rem;
+}
+
+.card {
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    min-width: 18rem;
+    max-width: 22rem;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+}
+
+.card-img-desktop {
+    height: auto;
+    display: none;
+    width: 100%;
+}
+
+.card-text-container {
+    padding: 2rem;
+}
+
+.catergory {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--Grey);
+    letter-spacing: 0.3rem;
+    margin-block-end: 1rem;
+}
+
+h1 {
+    font-family: "Fraunces", Arial, Helvetica, sans-serif;
+    color: var(--Black);
+    margin-block-end: 1.2rem;
+}
+
+.product-text {
+    font-family: "Montesrrat", Arial, Helvetica, sans-serif;
+    color: var(--Grey);
+    line-height: 150%;
+    margin-block-end: 1rem;
+    font-size: clamp(0.9rem, 5vw, 1rem);
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: 1rem;
+}
+
+span {
+    font-family: "Fraunces", Arial, Helvetica, sans-serif;
+}
+
+.new-price {
+    color: var(--Green-500);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.old-price {
+    color: var(--Grey);
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--Green-500);
+    color: var(--White);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 40rem;
+    }
+
+    .card-img {
+        display: none;
+    }
+
+    .card-img-desktop {
+        display: block;
+    }
+
+    .price-container {
+        margin-block-end: 2rem;
+    }
+}
