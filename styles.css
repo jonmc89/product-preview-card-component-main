@@ -110,6 +110,15 @@ button {
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--Green-700);
+}
+
+button:focus-visible {
+    background-color: var(--Green-700);
 }
 
 @media screen and (min-width: 51.25rem) {
